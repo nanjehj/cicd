@@ -19,5 +19,5 @@ jobs:
           echo "/tmp/sentinel" >> $GITHUB_PATH
 
       - name: Policy Evaluation
-        run: sentinel apply -config=$WORKING_DIR/sentinel.hcl
+        run: sentinel apply #-config=$WORKING_DIR/sentinel.hcl
         working-directory: ./compliance/config
