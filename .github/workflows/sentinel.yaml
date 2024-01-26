@@ -11,7 +11,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup Sentinel
+      - name: Setup Sentinel 
         run: |
           mkdir /tmp/sentinel
           curl -o /tmp/sentinel/sentinel.zip https://releases.hashicorp.com/sentinel/${VERSION}/sentinel_${VERSION}_linux_amd64.zip
